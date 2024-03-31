@@ -1,0 +1,19 @@
+.ff{
+    border: 1px solid  rgb(228, 109, 164);
+ border-radius: 5px;
+padding: 0px 50px;
+
+}
+.footerr{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.bi-envelope-open-heart-fill{
+    width: 25px;
+  height: 25px;
+  margin-bottom: px;
+  color: rgb(228, 109, 164);
+}
+.rightSide{
+  margin-left: 100px;
+}

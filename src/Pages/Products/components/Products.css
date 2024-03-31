@@ -1,0 +1,57 @@
+.searchBtn {
+    border: 3px solid rgb(240, 80, 164);
+    background-color: rgb(248, 175, 209);
+    border-radius: 50%;
+    padding: 2px 10px;
+   
+}
+.Filter{
+    border: 3px solid rgb(240, 80, 164);
+    background-color: rgb(248, 175, 209);
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-left: 50px;
+}
+.detailsBtn{
+    border: 1px solid rgb(240, 80, 164);
+    background-color: rgb(248, 175, 209);
+    padding: 2px 10px;
+    border-radius: 4px;
+   color: rgb(39, 38, 38);
+   text-decoration: none;
+   font-weight: 600;
+   
+}
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.allProducts{
+    margin-top: 30px;
+}
+.products{
+    margin-top: 500px;
+}
+.my-3{
+    margin-top: 20px;
+    padding: 10px;
+}
+.pagination{
+    margin-top: 30px;
+}
+.titlesColor{
+    color:  rgb(240, 80, 154);
+}
+.imagesBorder{
+    border: 2px solid  rgb(228, 109, 164);
+    color:  rgb(228, 109, 164);
+    border-radius: 8px;
+   
+}
+.cartBtn{
+    border: 3px solid rgb(240, 80, 164);
+    background-color: rgb(248, 175, 209);
+    border-radius: 3px;
+    padding: 6px;
+    }

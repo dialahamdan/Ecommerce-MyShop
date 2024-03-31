@@ -1,0 +1,15 @@
+.iconC{
+    color:  rgb(240, 80, 154);
+    width: 40px;
+   
+}
+.borderIcon{
+    border: 1px solid   rgb(240, 80, 154);
+   
+}
+.CateroryPBorder{
+    border: 2px solid   rgb(240, 80, 154);
+}
+.warning{
+    color:  rgb(240, 80, 154);
+}

@@ -1,0 +1,17 @@
+/* Category.module.css */
+
+.category-image {
+    transition: transform 0.3s ease; /* Add a smooth transition */
+  }
+  
+  /* .category-image:hover {
+    transform: scale(1.4); 
+  } */
+
+.catergriesTitle{
+  color: rgb(228, 109, 164);
+  font-weight: 800;
+}
+.catergriesBorder{
+  border: 1px solid  rgb(228, 109, 164);
+}
