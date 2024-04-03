@@ -29,3 +29,14 @@
     border: 1px solid rgb(240, 80, 164);
     
 }
+
+
+@media screen and ( max-width:425px ){
+    .tableSize{
+       
+        width: 300px;
+        scrollbar-width: 10px;
+    }
+    
+
+      }

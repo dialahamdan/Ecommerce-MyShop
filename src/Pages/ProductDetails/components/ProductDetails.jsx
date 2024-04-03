@@ -136,10 +136,7 @@ function ProductDetails() {
               <div className="card border border-0">
                 <div className="card-body">
                   <h4 className="card-title fw-bold ">{product.name}</h4>
-                  <p className="card-text text-capitalize  fw-semibold">
-                    <span className="text-uppercase fw-bolder titlesColor">Description:</span>{" "}
-                    {product.description}
-                  </p>
+                 
                   <p className="card-text text-capitalize  fw-semibold ">
                     <span className="text-uppercase fw-bolder  titlesColor">Slug:</span>{" "}
                     {product.slug}
@@ -151,6 +148,10 @@ function ProductDetails() {
                   <p className="card-text mb-4  fw-semibold text-danger titlesColor">
                     <span className="text-uppercase fw-bolder titlesColor">Status: </span>
                     {product.status}
+                  </p>
+                  <p className="card-text text-capitalize  fw-semibold">
+                    <span className="text-uppercase fw-bolder titlesColor">Description:</span>{" "}
+                    {product.description}
                   </p>
                   <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-2 g-md-3 g-lg-4">
                     {product.subImages.map((image, index) => (

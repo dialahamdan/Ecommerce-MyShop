@@ -191,11 +191,11 @@ function Cart() {
                                 </div>
                               ) : (
                                 <>
-                                  <div className="table-responsive">
+                                  <div className="table-responsive tableSize">
                                     <table className="table table-bordered table-hover  cartBorder">
                                       <thead>
                                         <tr className="text-center">
-                                          <th className="cartBorder">
+                                          <th className="cartBorder ">
                                             Image
                                           </th>
                                           <th className="cartBorder">
@@ -302,7 +302,27 @@ function Cart() {
                       </div>
                     </div>
                   </div>
-
+  <div>
+  <div colSpan="6">
+                            <button
+                              onClick={handleIClear}
+                              className="btn btn-sm btn-outline-danger  mt-5"
+                              disabled={cartItems.length === 0} // Disable the button when cartItems is empty
+                            >
+                              Delete Of All
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                className="bi bi-trash"
+                                viewBox="0 0 16 16"
+                              >
+                                {/* Your SVG icon */}
+                              </svg>
+                            </button>
+                          </div>
+  </div>
 
                   
                   <div className=" summary ">
@@ -350,25 +370,7 @@ function Cart() {
                     <div className="mt-5">
                       {cartItems.length > 0 && (
                         <div>
-                          <div colSpan="6">
-                            <button
-                              onClick={handleIClear}
-                              className="btn btn-sm btn-outline-danger  mt-5"
-                              disabled={cartItems.length === 0} // Disable the button when cartItems is empty
-                            >
-                              Delete Of All
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                fill="currentColor"
-                                className="bi bi-trash"
-                                viewBox="0 0 16 16"
-                              >
-                                {/* Your SVG icon */}
-                              </svg>
-                            </button>
-                          </div>
+                          
                         </div>
                       )}
                     </div>
