@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { NavLink, useNavigate  ,Link } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 import { UserContext } from "../../../context/User";
 import "./Navbar.css";
 
@@ -36,9 +36,7 @@ function Navbar() {
   }, [isDarkMode]);
 
   return (
-    <nav
-      className={`navbar navbar-expand-lg position-sticky top-0 z-3`}
-    >
+    <nav className={`navbar navbar-expand-lg position-sticky top-0 z-3`}>
       <div className="container-fluid  mb-3  p-3 backColor bg-opacity-10  ">
         <div className="d-flex">
           <i className="bi  logo ms-3 " />
@@ -159,7 +157,6 @@ function Navbar() {
           >
             <i className="bi bi-github logoGit" />
           </NavLink>
-          
         </div>
       </div>
     </nav>

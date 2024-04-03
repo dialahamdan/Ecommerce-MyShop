@@ -3,7 +3,7 @@ import axios from "axios";
 import { Bounce, toast } from "react-toastify";
 import { object, string } from "yup";
 import { useNavigate, useParams } from "react-router-dom";
-import'./Review.css'
+import "./Review.css";
 function Review() {
   const { id } = useParams();
   const [errors, setError] = useState([]);
@@ -147,13 +147,13 @@ function Review() {
                       onChange={handelChange}
                       className="form-control"
                     />
-                      <label className="label form-item ">Image</label>
-        <input
-          type="file"
-          className="imag imgPossition"
-          name="image"
-          onChange={handelImageChange}
-        />
+                    <label className="label form-item ">Image</label>
+                    <input
+                      type="file"
+                      className="imag imgPossition"
+                      name="image"
+                      onChange={handelImageChange}
+                    />
                   </div>
                   <button
                     type="submit"

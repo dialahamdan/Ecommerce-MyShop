@@ -3,7 +3,7 @@ import axios from "axios";
 import { object, string } from "yup";
 import { Bounce, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import './code.css'
+import "./code.css";
 function ForgetPassword() {
   const navigate = useNavigate();
   const [loader, setLoader] = useState(false);
@@ -86,63 +86,38 @@ function ForgetPassword() {
   return (
     <>
       <div className="register">
-        <h1 className="  label">
-         
-         Reset Your Password 
-        </h1>
+        <h1 className="  label">Reset Your Password</h1>
         <form onSubmit={handleSubmit} className="formForget">
-          
-           
-            
-           <label className="label form-item title">
-                
-                email
-              </label>
-              <input
-                className="  w-auto"
-                type="email"
-                value={user.email}
-                name="email"
-                onChange={handleChange}
-              />
-           
-          
-            
-              <label className="label form-item title">
-                
-                password
-              </label>
-              <input
-                className=" w-auto"
-                type="password"
-                value={user.password}
-                name="password"
-                onChange={handleChange}
-              />
-           
-           
-              <label className="label form-item title">
-                
-                Code
-              </label>
-              <input
-                className="  w-auto"
-                type="text"
-                value={user.code}
-                name="code"
-                onChange={handleChange}
-              />
-           
-           
-              <button
-                type="submit"
-                className="signBtn"
-                disabled={loader}
-              >
-                {!loader ? "Submit" : "Please wait..."}
-              </button>
-           
-         
+          <label className="label form-item title">email</label>
+          <input
+            className="  w-auto"
+            type="email"
+            value={user.email}
+            name="email"
+            onChange={handleChange}
+          />
+
+          <label className="label form-item title">password</label>
+          <input
+            className=" w-auto"
+            type="password"
+            value={user.password}
+            name="password"
+            onChange={handleChange}
+          />
+
+          <label className="label form-item title">Code</label>
+          <input
+            className="  w-auto"
+            type="text"
+            value={user.code}
+            name="code"
+            onChange={handleChange}
+          />
+
+          <button type="submit" className="signBtn" disabled={loader}>
+            {!loader ? "Submit" : "Please wait..."}
+          </button>
         </form>
       </div>
     </>

@@ -1,42 +1,37 @@
-.cartBorder{
-    border: 3px solid rgb(240, 80, 164);
-    border-radius: 10px;
+.cartBorder {
+  border: 3px solid rgb(240, 80, 164);
+  border-radius: 10px;
 }
-.cartLable{
-    color: rgb(240, 80, 164) ;
-    font-weight: 800;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.cartLable {
+  color: rgb(240, 80, 164);
+  font-weight: 800;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
-.subLable{
-    color:rgb(240, 80, 164) ;
+.subLable {
+  color: rgb(240, 80, 164);
 }
-.summary{
-    border: 3px solid rgb(240, 80, 164);
-    width: 100%;
-   border-radius: 10px;
- 
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
+.summary {
+  border: 3px solid rgb(240, 80, 164);
+  width: 100%;
+  border-radius: 10px;
+
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
 }
-.qB{
-    background-color: pink;
-    border: 1px solid rgb(240, 80, 164);
-    
+.qB {
+  background-color: pink;
+  border: 1px solid rgb(240, 80, 164);
 }
 
-
-@media screen and ( max-width:425px ){
-    .tableSize{
-       
-        width: 300px;
-        scrollbar-width: 10px;
-    }
-    
-
-      }
+@media screen and (max-width: 425px) {
+  .tableSize {
+    width: 300px;
+    scrollbar-width: 10px;
+  }
+}

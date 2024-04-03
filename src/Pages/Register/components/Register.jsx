@@ -96,59 +96,55 @@ function Register() {
   };
 
   return (
-    
     <>
-    {errors.length > 0 ? errors.map((error) => <p>{error}</p>) : ""}
+      {errors.length > 0 ? errors.map((error) => <p>{error}</p>) : ""}
 
-    
-    <div className="register ">
-      <h2 className="label title">Sign Up </h2>
+      <div className="register ">
+        <h2 className="label title">Sign Up </h2>
 
-      <form className="form" onSubmit={handelSubmit}>
-        <label className="label form-item">User Name</label>
-        <input
-          type="text"
-          value={user.userName}
-          name="userName"
-          onChange={handelChange}
-        />
+        <form className="form" onSubmit={handelSubmit}>
+          <label className="label form-item">User Name</label>
+          <input
+            type="text"
+            value={user.userName}
+            name="userName"
+            onChange={handelChange}
+          />
 
-        <label className="label form-item">Email</label>
-        <input
-          type="email"
-          value={user.email}
-          name="email"
-          onChange={handelChange}
-        />
+          <label className="label form-item">Email</label>
+          <input
+            type="email"
+            value={user.email}
+            name="email"
+            onChange={handelChange}
+          />
 
-        <label className="label form-item">Password</label>
-        <input
-          type="password"
-          value={user.password}
-          name="password"
-          onChange={handelChange}
-        />
+          <label className="label form-item">Password</label>
+          <input
+            type="password"
+            value={user.password}
+            name="password"
+            onChange={handelChange}
+          />
 
-        <label className="label form-item ">Image</label>
-        <input
-          type="file"
-          className="imag"
-          name="image"
-          onChange={handelImageChange}
-        />
+          <label className="label form-item ">Image</label>
+          <input
+            type="file"
+            className="imag"
+            name="image"
+            onChange={handelImageChange}
+          />
 
-        <button
-          className=" signBtn"
-          disabled={loader?"disabled":null }
-          type="submit"
-        >
-          {!loader ? "sign up" : "wait..."}
-        </button>
-      </form>
-    </div>
-    
-  </>
-    
+          <button
+            className=" signBtn"
+            disabled={loader ? "disabled" : null}
+            type="submit"
+          >
+            {!loader ? "sign up" : "wait..."}
+          </button>
+        </form>
+      </div>
+    </>
   );
 }
 

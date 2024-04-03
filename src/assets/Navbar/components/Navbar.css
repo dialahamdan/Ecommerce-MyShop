@@ -1,7 +1,7 @@
 .nav-link.active {
   border-bottom: 2px solid rgb(228, 109, 164);
 }
-.icon{
+.icon {
   width: 25px;
   height: 25px;
   margin-bottom: 2px;
@@ -25,10 +25,9 @@
 }
 .mode {
   font-size: 26px;
-
 }
-.backColor{
- border: 1px solid  rgb(228, 109, 164);
- border-radius: 5px;
- background-color: rgba(243, 192, 201, 0.616);
+.backColor {
+  border: 1px solid rgb(228, 109, 164);
+  border-radius: 5px;
+  background-color: rgba(243, 192, 201, 0.616);
 }

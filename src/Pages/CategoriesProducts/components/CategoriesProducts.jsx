@@ -5,7 +5,7 @@ import useResource from "../../../hooks/useResource";
 
 import Loader from "../../Loader/components/Loader";
 import { Bounce, toast } from "react-toastify";
-import './categoriesProducts.css'
+import "./categoriesProducts.css";
 function CategoriesProducts() {
   const { id } = useParams();
   const { products, loader } = useResource(
@@ -84,27 +84,26 @@ function CategoriesProducts() {
                 alt={product.name}
               />
               <p className="text-center fw-bold text-black">
-               {" "}
+                {" "}
                 Price : {product.price}
               </p>
               <p className="text-center fw-bold text-black">
-               
                 Final Price : {product.finalPrice}
               </p>
               <button
                 className="btn text-center borderIcon mx-auto d-block"
                 onClick={() => addToCart(product._id)}
               >
-                 <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="50"
-                        height="25"
-                        fill="currentColor"
-                        className="bi bi-cart4 iconC "
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                      </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="25"
+                  fill="currentColor"
+                  className="bi bi-cart4 iconC "
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
               </button>
             </div>
           ))
@@ -114,9 +113,9 @@ function CategoriesProducts() {
             <h2 className="text-capitalize text-center fs-1 mb-3 fw-bold pb-2 ">
               No products available
             </h2>
-            
+
             <p className="text-center fw-bold  ">
-              This section has no items yet 
+              This section has no items yet
             </p>
             <p className="text-center fw-bold ">
               {" "}

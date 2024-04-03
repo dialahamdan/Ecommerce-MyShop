@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Loader from "../../Loader/components/Loader";
 import style from "./Profile.module.css";
-import './Profile.css'
+import "./Profile.css";
 function Profile() {
   const [userProfile, setUserProfile] = useState({});
   const [currentSection, setCurrentSection] = useState("basic");
@@ -67,7 +67,6 @@ function Profile() {
                 text="User Information"
                 onClick={() => handleSectionChange("basic")}
                 active={currentSection === "basic"}
-                
               />
               <SidebarItem
                 text="Email & Password"

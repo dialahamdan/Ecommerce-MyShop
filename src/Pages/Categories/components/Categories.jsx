@@ -15,7 +15,7 @@ function Categories() {
         );
         setCategories(data.categories);
       } catch (error) {
-        <Loader/>;
+        <Loader />;
       }
     };
 
@@ -24,7 +24,11 @@ function Categories() {
 
   return (
     <div className={` p-5 mb-5 mt-5 rounded ${styles["catergriesBorder"]} `}>
-      <h2 className={`mb-5 d-flex justify-content-center fs-1 ${styles["catergriesTitle"]}  `}>Categories</h2>
+      <h2
+        className={`mb-5 d-flex justify-content-center fs-1 ${styles["catergriesTitle"]}  `}
+      >
+        Categories
+      </h2>
       <div className="row">
         {categories.map((category) => (
           <div className={`col-12 col-md-3 p-3 `} key={category._id}>

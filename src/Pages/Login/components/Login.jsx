@@ -4,7 +4,7 @@ import { object, string } from "yup";
 import { Bounce, Slide, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../../context/User";
-import './Signup.css'
+import "./Signup.css";
 function Login() {
   const { setUserToken } = useContext(UserContext);
   const navigate = useNavigate();
@@ -87,13 +87,11 @@ function Login() {
   };
 
   return (
-    
-
     <>
       {errors.length > 0 ? errors.map((error) => <p>{error}</p>) : ""}
       <div className="register">
         <h2 className="label title">Sign In </h2>
-        <form className="form" onSubmit={handelSubmit}>       
+        <form className="form" onSubmit={handelSubmit}>
           <label className="label form-item">Email</label>
           <input
             type="email"
@@ -108,10 +106,10 @@ function Login() {
             name="password"
             onChange={handelChange}
           />
-        <Link to='/sendcode'>Forgot your password ?</Link>
+          <Link to="/sendcode">Forgot your password ?</Link>
           <button
             className=" signBtn"
-            disabled={loader?"disabled":null}
+            disabled={loader ? "disabled" : null}
             type="submit"
           >
             {!loader ? "sign in" : "wait..."}

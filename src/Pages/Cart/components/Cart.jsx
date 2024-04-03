@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
-import './Cart.css'
+import "./Cart.css";
 import Loader from "../../Loader/components/Loader";
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -133,20 +133,17 @@ function Cart() {
   }, 0);
   // eslint-disable-next-line no-unused-vars
   function handleCheckoutClick(cartItems) {
-    toast.success(
-      "All informations are correct , Complete Payment ",
-      {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      }
-    );
+    toast.success("All informations are correct , Complete Payment ", {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   }
 
   return (
@@ -154,10 +151,7 @@ function Cart() {
       <div className="container py-5 h-100">
         <div className="row justify-content-center align-items-center h-100">
           <div className="">
-            <div
-              className="card cartBorder"
-              style={{ borderRadius: "50px" }}
-            >
+            <div className="card cartBorder" style={{ borderRadius: "50px" }}>
               <div className="card-body">
                 <div className="row ">
                   <div className="">
@@ -165,17 +159,16 @@ function Cart() {
                       <div className="d-flex flex-column flex-wrap">
                         <h1 className="fw-bold mb-5  text-center cartLable ">
                           Shopping Cart
-
                           <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="60"
-                        height="55"
-                        fill="currentColor"
-                        className="bi bi-cart4 iconC "
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                      </svg>
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="55"
+                            fill="currentColor"
+                            className="bi bi-cart4 iconC "
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                          </svg>
                         </h1>
                         <div className="mb-0 text-muted wit">
                           {loader ? (
@@ -185,9 +178,7 @@ function Cart() {
                               {cartItems.length === 0 ? (
                                 <div className="text-center text-danger fs-5  text-capitalize fw-bold">
                                   <p>Cart Is Empty</p>
-                                  <span>
-                                    Add some Products 
-                                  </span>
+                                  <span>Add some Products</span>
                                 </div>
                               ) : (
                                 <>
@@ -195,21 +186,13 @@ function Cart() {
                                     <table className="table table-bordered table-hover  cartBorder">
                                       <thead>
                                         <tr className="text-center">
-                                          <th className="cartBorder ">
-                                            Image
-                                          </th>
-                                          <th className="cartBorder">
-                                            Name
-                                          </th>
-                                          <th className=" cartBorder">
-                                            Price
-                                          </th>
+                                          <th className="cartBorder ">Image</th>
+                                          <th className="cartBorder">Name</th>
+                                          <th className=" cartBorder">Price</th>
                                           <th className=" cartBorder">
                                             Quantity
                                           </th>
-                                          <th className="cartBorder">
-                                            Total
-                                          </th>
+                                          <th className="cartBorder">Total</th>
                                           <th className=" cartBorder">
                                             Remove
                                           </th>
@@ -287,13 +270,11 @@ function Cart() {
                                                 </svg>
                                               </button>
                                             </td>
-                                            
                                           </tr>
                                         ))}
                                       </tbody>
                                     </table>
                                   </div>
-                                 
                                 </>
                               )}
                             </>
@@ -302,29 +283,28 @@ function Cart() {
                       </div>
                     </div>
                   </div>
-  <div>
-  <div colSpan="6">
-                            <button
-                              onClick={handleIClear}
-                              className="btn btn-sm btn-outline-danger  mt-5"
-                              disabled={cartItems.length === 0} // Disable the button when cartItems is empty
-                            >
-                              Delete Of All
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                fill="currentColor"
-                                className="bi bi-trash"
-                                viewBox="0 0 16 16"
-                              >
-                                {/* Your SVG icon */}
-                              </svg>
-                            </button>
-                          </div>
-  </div>
+                  <div>
+                    <div colSpan="6">
+                      <button
+                        onClick={handleIClear}
+                        className="btn btn-sm btn-outline-danger  mt-5"
+                        disabled={cartItems.length === 0} // Disable the button when cartItems is empty
+                      >
+                        Delete Of All
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          className="bi bi-trash"
+                          viewBox="0 0 16 16"
+                        >
+                          {/* Your SVG icon */}
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
 
-                  
                   <div className=" summary ">
                     <div className="">
                       <h3 className="cartLable mb-5 mt-2 pt-1 text-center ">
@@ -340,12 +320,14 @@ function Cart() {
                         <span className="text-uppercase ">Total price</span>
                         <span className="me-5 text-danger">${totalPrice}</span>
                       </div>
-                      <span className="text-uppercase subLable fw-bold"> Enter Code</span>
+                      <span className="text-uppercase subLable fw-bold">
+                        {" "}
+                        Enter Code
+                      </span>
                       <div className="mt-3">
                         <input
                           type="text"
                           className="form-control form-control-lg border-secondary"
-                          
                         />
                       </div>
                       <hr className="my-4" />
@@ -368,11 +350,7 @@ function Cart() {
                       )}
                     </div>
                     <div className="mt-5">
-                      {cartItems.length > 0 && (
-                        <div>
-                          
-                        </div>
-                      )}
+                      {cartItems.length > 0 && <div></div>}
                     </div>
                   </div>
                 </div>

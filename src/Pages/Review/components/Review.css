@@ -1,20 +1,18 @@
-.review{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(240, 80, 164);
-    padding: 30px 5px ;
-    border-radius: 6px;
-   
-
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(240, 80, 164);
+  padding: 30px 5px;
+  border-radius: 6px;
 }
-.imgPossition{
-    margin-top: 20px;
+.imgPossition {
+  margin-top: 20px;
 }
-.addCommentBtn{
-    border: 2px solid rgb(240, 80, 164);
-    background-color: pink;
-    padding: 15px 20px;
-    margin-left: 180px;
+.addCommentBtn {
+  border: 2px solid rgb(240, 80, 164);
+  background-color: pink;
+  padding: 15px 20px;
+  margin-left: 180px;
 }

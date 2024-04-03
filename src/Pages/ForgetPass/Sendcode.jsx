@@ -3,7 +3,7 @@ import axios from "axios";
 import { object, string } from "yup";
 import { Bounce, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import './code.css'
+import "./code.css";
 
 function ForgetPass() {
   const [email, setEmail] = useState("");
@@ -54,36 +54,31 @@ function ForgetPass() {
   };
 
   return (
-    
     <>
-    {errors.length > 0 ? errors.map((error) => <p>{error}</p>) : ""}
+      {errors.length > 0 ? errors.map((error) => <p>{error}</p>) : ""}
 
-<div className="register">
- <h2 className="label title"> </h2>
+      <div className="register">
+        <h2 className="label title"> </h2>
 
- <form className="form" onSubmit={handleSubmit}>
-  
+        <form className="form" onSubmit={handleSubmit}>
+          <label className="label form-item title">Enter Your Email </label>
+          <input
+            type="email"
+            value={email}
+            name="email"
+            onChange={handleChange}
+          />
 
-   <label className="label form-item title">Enter Your Email </label>
-   <input
-     type="email"
-     value={email}
-     name="email"
-     onChange={handleChange}
-   />
-
-
-
-   <button
-     className=" signBtn"
-     disabled={loader?"disabled":null}
-     type="submit"
-   >
-     {!loader ? "Verify" : "wait..."}
-   </button>
- </form>
-</div>
-   </>
+          <button
+            className=" signBtn"
+            disabled={loader ? "disabled" : null}
+            type="submit"
+          >
+            {!loader ? "Verify" : "wait..."}
+          </button>
+        </form>
+      </div>
+    </>
   );
 }
 
