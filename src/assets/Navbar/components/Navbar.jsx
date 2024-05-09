@@ -8,20 +8,6 @@ function Navbar() {
     useContext(UserContext);
   const navigate = useNavigate();
 
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Get dark mode preference from local storage or default to false
-    return localStorage.getItem("darkMode") === "true";
-  });
-
-  const toggleDarkMode = () => {
-    // Toggle dark mode state
-    setIsDarkMode((prevMode) => {
-      const newMode = !prevMode;
-      // Save dark mode preference to local storage
-      localStorage.setItem("darkMode", newMode);
-      return newMode;
-    });
-  };
 
   const logout = () => {
     localStorage.removeItem("userToken");
@@ -30,10 +16,7 @@ function Navbar() {
     navigate("/login");
   };
 
-  useEffect(() => {
-    // Add/remove dark mode class to body based on isDarkMode state
-    document.body.classList.toggle("dark-mode", isDarkMode);
-  }, [isDarkMode]);
+
 
   return (
     <nav className={`navbar navbar-expand-lg position-sticky top-0 z-3`}>
